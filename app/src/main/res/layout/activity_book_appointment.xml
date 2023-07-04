@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:gravity="center"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+tools:context=".BookAppointmentActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="24*7 HealthCare"
+    android:textColor="#FFEB3B"
+    android:textSize="34sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textViewTitleName"
+    android:layout_marginTop="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Book Appointment"
+    android:textColor="#F8F7F5"
+    android:textSize="34sp"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/editTextFullName"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/ic_baseline_person_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Full Name"
+    android:inputType="textPersonName"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6" />
+
+<EditText
+    android:id="@+id/editTextAddress"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/ic_baseline_security_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Address"
+    android:inputType="textEmailAddress"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6" />
+
+<EditText
+    android:id="@+id/editTextContactNo"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/ic_baseline_email_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Contact Number"
+    android:inputType="number"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6" />
+
+<EditText
+    android:id="@+id/editTextFees"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/baseline_payment_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Fees"
+    android:inputType="number"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6"
+    tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/setDateText"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textColor="#DFD369"
+                android:layout_marginLeft="35dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/setDate"
+                style="?android:spinnerStyle"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_bg"
+                android:text="27/10/2022"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/setTimeText"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                android:layout_marginLeft="35dp"
+                android:textColor="#DFD369"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <!--now for selecting time we need to set custom time picker and date picker-->
+    <Button
+        android:id="@+id/setTime"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        style="?android:spinnerStyle"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="10:00 AM" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<Button
+    android:id="@+id/buttonBookAppointment"
+    android:layout_width="261dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/btn_bg"
+    android:text="BOOK APPOINTMENT" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="261dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg"
+        android:text="BACK" />
+
+
+</LinearLayout>

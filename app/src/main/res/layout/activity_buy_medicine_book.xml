@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:gravity="center"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+tools:context=".BuyMedicineBookActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="24*7 HealthCare"
+    android:textColor="#FFEB3B"
+    android:textSize="34sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textViewTitleName"
+    android:layout_marginTop="40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please Fill All Details for Booking"
+    android:textColor="#F8F7F5"
+    android:textSize="24sp"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/editTextFullName"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/ic_baseline_person_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Full Name"
+    android:inputType="textPersonName"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6" />
+
+<EditText
+    android:id="@+id/editTextAddress"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/ic_baseline_security_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Address"
+    android:inputType="textEmailAddress"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6" />
+
+<EditText
+    android:id="@+id/editTextPinCode"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/baseline_fiber_pin_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Pin Code"
+    android:inputType="number"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6" />
+
+<EditText
+    android:id="@+id/editTextContactNo"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/input_bg"
+    android:drawableLeft="@drawable/baseline_payment_24"
+    android:drawablePadding="10dp"
+    android:ems="15"
+    android:hint="Contact Number"
+    android:inputType="number"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:textColor="#F4EFEF"
+    android:textColorHint="#FAF6F6"
+    tools:ignore="MissingConstraints" />
+
+
+<Button
+    android:id="@+id/book"
+    android:layout_width="261dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/btn_bg"
+    android:text="BOOK" />
+
+
+</LinearLayout>
